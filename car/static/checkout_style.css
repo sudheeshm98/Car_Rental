@@ -1,0 +1,7 @@
+.container {
+    border: 1px solid black;
+}
+
+.custom-image {
+    aspect-ratio: 4/3;
+}

@@ -1,0 +1,12 @@
+.custom-card {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-card-image {
+    aspect-ratio: 4/3;
+}
+
+.card-body {
+    text-align: center;
+}

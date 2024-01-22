@@ -1,0 +1,26 @@
+body {
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: rgb(129, 186, 219);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 30px;
+    box-shadow: 2px 3px 4px #3f3d3d;
+}
+
+form input {
+    border: 1px solid black;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin: 5px 0;
+}

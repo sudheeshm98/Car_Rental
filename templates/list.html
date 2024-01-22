@@ -1,0 +1,34 @@
+{% extends 'home.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'list_style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <class class="row g-4">
+            {% for car in cars %}
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card">
+                    <img class="card-img-top custom-card-image" src="{{car.image_url}}" alt="{{car.make}}">
+                    <div class="card-body">
+                        <h3>{{car.make}}</h3>
+                        <h3>{{car.model}}</h3>
+                        <a class="btn btn-primary" href="{% url 'car:detail' car.id %}">View</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </class>
+    </div>
+</body>
+</html>
+{% endblock content %}

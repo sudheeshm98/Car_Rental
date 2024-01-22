@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: cadetblue !important;
+}
+
+form {
+    border-radius: 20px;
+    background-color: rgb(167, 193, 201) !important;
+    padding:  20px 30px;
+    text-align: center;
+    box-shadow: 2px 3px 5px #222020 !important;
+}
+
+label {
+    display: none !important;
+}
+
+input {
+    padding-left: 15px;
+    height: 35px;
+    border: none;
+    border-radius: 10px !important;
+}
